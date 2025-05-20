@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(17, 25, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.clock{
+    width: 250px;
+    height: 250px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.234);
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circleRadius{
+    background-color: rgb(255, 255, 255);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 1000;
+}
+.threeHands{
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.threeHands.first{
+    width: 195px;
+    height: 195px;
+}
+.threeHands.second{
+    width: 170px;
+    height: 170px;
+}
+.threeHands.third{
+    width: 130px;
+    height: 130px;
+}
+.secHand{
+    background-color: rgb(23, 123, 200);
+    width: 5px;
+    height: 110px;
+    border-radius: 10px;
+}
+.minHand{
+    background-color: rgb(255, 147, 120);
+    width: 5px;
+    height: 95px;
+    border-radius: 10px;
+}
+.hourHand{
+    background-color: rgb(255, 255, 255);
+    width: 5px;
+    height: 75px;
+    border-radius: 10px;
+}
+.twelve{
+    position: absolute;
+    top: 10px;
+}
+.three{
+    position: absolute;
+    bottom: 10px;
+}
+.six{
+    position: absolute;
+    right:10px;
+}
+.nine{
+    position: absolute;
+    left: 10px;
+}
+.digitalClock{
+    color: white;
+    background-color: rgba(197, 195, 195, 0.123);
+    font-size: 25px;
+    padding:15px 20px;
+    border-radius:15px;
+}
+.currentDate{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
